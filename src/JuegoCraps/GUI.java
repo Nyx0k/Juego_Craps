@@ -112,6 +112,8 @@ public class GUI extends JFrame {
      * @param args Object used in order to send input data from command line when
      *             the program is execute by console.
      */
+
+
     public static void main(String[] args){
         EventQueue.invokeLater(() -> {
             GUI miProjectGUI = new GUI();
@@ -125,8 +127,9 @@ public class GUI extends JFrame {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-        modelCraps.calcularTiro();
-        int [] caras = modelCraps.getCaras();
+
+            modelCraps.calcularTiro();
+            int [] caras = modelCraps.getCaras();
 
             ImagenDado = new ImageIcon(getClass().getResource("/Recursos/"+caras[0]+".JPG"));
             dado1.setIcon(ImagenDado);
